@@ -1,0 +1,13 @@
+[
+    { 
+        "id": 1,
+        "city_name": "Paris",
+        "country_name": "France",
+        "img": "https://thisgirlabroad.com/wp-content/uploads/2015/01/img-poi530-G6bo2q-i4s.jpg",
+        "tips": {
+            "wifi": "Easy to find WiFi, expensive mobile data",
+            "hotels": "Comfortable, but expensive hotels",
+            "flights": "Affordable flights"
+        }
+    }
+]
