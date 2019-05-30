@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "categories": [
+      {
+        "category": "Dinner",
+        "restaurants": [
+          {
+            "id": 1,
+            "name": "Le Cinq",
+            "rating": 4.6,
+            "open_time": "12:30",
+            "close_time": "21:00",
+            "description": "$$$$ · French · 31 Avenue George V",
+            "img": "https://lh5.googleusercontent.com/p/AF1QipMq-TmauAH09iCaUoBeEClumWXpsm_Qs8OpAZBn=w408-h271-k-no"
+          },
+          {
+            "id": 2,
+            "name": "Septime",
+            "rating": 4.0,
+            "open_time": "7:30",
+            "close_time": "23:00",
+            "description": "$$$ · French · 80 Rue de Charonne",
+            "img": "https://lh5.googleusercontent.com/p/AF1QipPQPVunwoN_w_8gsEqJfsiv9by4V8R8p5QCrzHt=w408-h270-k-no"
+          },
+          {
+            "id": 3,
+            "name": "Le Gabriel",
+            "rating": 5,
+            "open_time": "8:00",
+            "close_time": "20:00",
+            "description": "$$ · Modern French · 42 Avenue Gabriel",
+            "img": "https://lh5.googleusercontent.com/p/AF1QipMuBJIzC7zDgmD4rQJnfUY4OMDD3P5FAk2v5PSP=w408-h271-k-no"
+          },
+          {
+            "id": 4,
+            "name": "Guy Savoy",
+            "rating": 3.5,
+            "open_time": "6:00",
+            "close_time": "24:00",
+            "description": "$$$$ · Haute French · 11 Quai de Conti",
+            "img": "https://lh5.googleusercontent.com/p/AF1QipPFVr69bqXfB9uS2ry7V2A2DSwYgeLnTCrfVc8m=w408-h408-k-no"
+          }
+        ]
+      },
+      {
+        "category": "Breakfast",
+        "restaurants": [
+          {
+            "id": 1,
+            "name": "Café Oberkampf",
+            "rating": 5,
+            "open_time": "8:00",
+            "close_time": "20:00",
+            "description": "$$ · Modern French · 42 Avenue Gabriel",
+            "img": "https://lh5.googleusercontent.com/p/AF1QipOEnFLuNHDQN-cpxOBIF1DJy5rHWPnA0j5AEe3g=w408-h306-k-no"
+          },
+          {
+            "id": 2,
+            "name": "Loustic",
+            "rating": 4.5,
+            "open_time": "6:00",
+            "close_time": "24:00",
+            "description": "$$$$ · Haute French · 11 Quai de Conti",
+            "img": "https://lh5.googleusercontent.com/p/AF1QipNSQ2ZGNHpLPVXMH4CG0cuSkaVeiBHFEU-576wD=w408-h306-k-no"
+          },
+          {
+            "id": 3,
+            "name": "Angelina Paris",
+            "rating": 4.3,
+            "open_time": "12:30",
+            "close_time": "21:00",
+            "description": "$$$$ · French · 31 Avenue George V",
+            "img": "https://lh5.googleusercontent.com/p/AF1QipPQ6qEDSyQ55jKlkyuu-zwqyBaenTzfLlBNDKr-=w427-h240-k-no"
+          },
+          {
+            "id": 4,
+            "name": "Coutume Café",
+            "rating": 4.0,
+            "open_time": "7:30",
+            "close_time": "23:00",
+            "description": "$$$ · French · 80 Rue de Charonne",
+            "img": "https://lh5.googleusercontent.com/p/AF1QipNLfYLRX0M1xfEywW949R1NaKCozAnJqOeRHrnT=w427-h240-k-no"
+          }
+        ]
+      },
+      {
+        "category": "Bars",
+        "restaurants": [
+          {
+            "id": 1,
+            "name": "Le Gabriel",
+            "rating": 5,
+            "open_time": "8:00",
+            "close_time": "20:00",
+            "description": "$$ · Modern French · 42 Avenue Gabriel",
+            "img": "https://lh5.googleusercontent.com/p/AF1QipMAQ4FjOYHCs-MJ-MxIs0d_2isAfvFJpIGSXdx0=w462-h240-k-no"
+          },
+          {
+            "id": 2,
+            "name": "Le Cinq",
+            "rating": 4.6,
+            "open_time": "12:30",
+            "close_time": "21:00",
+            "description": "$$$$ · French · 31 Avenue George V",
+            "img": "https://lh5.googleusercontent.com/p/AF1QipPwSrgTBGx0_AtIumMz9tAKDUndHbttOPXPFnVd=w408-h271-k-no"
+          },
+          {
+            "id": 3,
+            "name": "Septime",
+            "rating": 4.0,
+            "open_time": "7:30",
+            "close_time": "23:00",
+            "description": "$$$ · French · 80 Rue de Charonne",
+            "img": "https://lh5.googleusercontent.com/p/AF1QipMR5W4Tksi7HA4-tHpur6vdTQW8qNaw8zvoH5YH=w480-h240-k-no"
+          },
+          {
+            "id": 4,
+            "name": "Guy Savoy",
+            "rating": 3.5,
+            "open_time": "6:00",
+            "close_time": "24:00",
+            "description": "$$$$ · Haute French · 11 Quai de Conti",
+            "img": "https://lh5.googleusercontent.com/p/AF1QipPDFrKvsbkt9LxE6LoJvval58MY4vbN5rHBroiR=w408-h410-k-no"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -39,7 +39,9 @@
         <font-awesome-icon class="back-button" icon="chevron-left" ontouchstart="" @click="$router.go(-1)" />
         <div class="row" v-for="(pairedCategory, index) in pairedCategories" :key="index">
             <div class="column" v-for="(category, categoryIndex) in pairedCategory" :key="categoryIndex">
-                <category :title="category.title" :img="category.img" />
+                <a :href="'../'+category.href + '/' + destinationId">
+                    <category :title="category.title" :img="category.img" />
+                </a>
             </div>
 
         </div>
@@ -64,7 +66,7 @@ export default {
                 { title: 'Things to do', img: 'https://lh3.googleusercontent.com/Okzay-3tneCVh-daEFY4JTEYZadeZjpROXy0y8hDHQcwuKXsSJb1gKtuLOEezPQlINAN=w200' },
                 { title: 'Saved places', img: 'https://lh3.googleusercontent.com/MU0yfmDsmvRWuwQManvCC1lzteWtPnjsivV4oPAKmKS5mo-qLInIiX863xfdUqBN1owG=w200' },
                 { title: 'Getting around', img: 'https://lh3.googleusercontent.com/FUh6GN6nh6QgKiXIrhZpE1szg7WDzZvLpvR4MZja0PJuRKLy2-CxchKf8Qyd7eWj8G4=w200' },
-                { title: 'Food & Drink', img: 'https://lh3.googleusercontent.com/oravYs3ZsI3OLcuQTIpuahY7WNMJjVMQ45AH_qjNl2osjRjQX1sEbuVpsmJOEDeZ9sqx=w200-rwa' },
+                { title: 'Food & Drink', href: "fooddrinks", img: 'https://lh3.googleusercontent.com/oravYs3ZsI3OLcuQTIpuahY7WNMJjVMQ45AH_qjNl2osjRjQX1sEbuVpsmJOEDeZ9sqx=w200-rwa'},
                 { title: 'Advanced search', img: 'http://ascameb.com/articulos/img/oculta.png' },
                 { title: 'Info', img: 'https://image.flaticon.com/icons/svg/1786/1786635.svg' },
             ]
@@ -107,6 +109,11 @@ export default {
 </script>
 
 <style lang="less">
+
+a {
+    text-decoration: none; /* no underline */
+}
+
 .destination {
     height: 100vh;
     color: white;
@@ -165,7 +172,7 @@ export default {
 .city-places {
     background-color: #C4D8E9;
     padding: 8px;
-    height: 250px !important;
+    height: 300px !important;
 }
 .slider-item.city-place-slider-item {
     padding: 0 20px;

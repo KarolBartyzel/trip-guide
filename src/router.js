@@ -19,6 +19,11 @@ export default new Router({
       component: () => import('./views/Destination.vue')
     },
     {
+      path: '/fooddrinks/:id',
+      name: 'fooddrink',
+      component: () => import('./views/FoodDrink.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
