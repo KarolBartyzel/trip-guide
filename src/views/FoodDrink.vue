@@ -46,26 +46,6 @@
         fooddrinkId: null,
         fooddrink: null,
         loading: false,
-        categories: [
-          {
-            title: 'Things to do',
-            img: 'https://lh3.googleusercontent.com/Okzay-3tneCVh-daEFY4JTEYZadeZjpROXy0y8hDHQcwuKXsSJb1gKtuLOEezPQlINAN=w200'
-          },
-          {
-            title: 'Saved places',
-            img: 'https://lh3.googleusercontent.com/MU0yfmDsmvRWuwQManvCC1lzteWtPnjsivV4oPAKmKS5mo-qLInIiX863xfdUqBN1owG=w200'
-          },
-          {
-            title: 'Getting around',
-            img: 'https://lh3.googleusercontent.com/FUh6GN6nh6QgKiXIrhZpE1szg7WDzZvLpvR4MZja0PJuRKLy2-CxchKf8Qyd7eWj8G4=w200'
-          },
-          {
-            title: 'Food & Drink',
-            img: 'https://lh3.googleusercontent.com/oravYs3ZsI3OLcuQTIpuahY7WNMJjVMQ45AH_qjNl2osjRjQX1sEbuVpsmJOEDeZ9sqx=w200-rwa'
-          },
-          {title: 'Advanced search', img: 'http://ascameb.com/articulos/img/oculta.png'},
-          {title: 'Info', img: 'https://image.flaticon.com/icons/svg/1786/1786635.svg'},
-        ]
       }
     },
     created() {
