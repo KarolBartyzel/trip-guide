@@ -24,6 +24,11 @@ export default new Router({
       component: () => import('./views/FoodDrink.vue')
     },
     {
+      path: '/places/:id',
+      name: 'place',
+      component: () => import('./views/Place.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting

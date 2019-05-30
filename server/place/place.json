@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Le Cinq",
+    "rating": 4.6,
+    "description": "French restaurant, costly and friendly $$$$",
+    "img": "https://lh5.googleusercontent.com/p/AF1QipMq-TmauAH09iCaUoBeEClumWXpsm_Qs8OpAZBn=w408-h271-k-no",
+
+    "tips": {
+      "location": "31 Avenue George V, 75008 Paris, France",
+      "open_time": "12:30",
+      "close_time": "21:00",
+      "phone": "+33 1 49 52 71 54"
+    }
+  }
+]
