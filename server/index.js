@@ -4,10 +4,14 @@ const app = express();
 app.use(cors());
 
 const PORT = 3009;
+const destination = require('./destination');
+const fooddrink = require('./fooddrink');
 const place = require('./place');
 
 app
 /////ENDPOINTS/////
+    .get('/destinations/:destinationId', destination.getDestination)
+    .get('/fooddrinks/:fooddrinkId', fooddrink.getFooddrink)
     .get('/places/:placeId', place.getPlace)
 /////ENDPOINTS/////
     .listen(PORT, () => {

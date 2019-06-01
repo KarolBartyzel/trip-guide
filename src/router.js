@@ -14,7 +14,17 @@ export default new Router({
       component: Home
     },
     {
-      path: '/place/:id',
+      path: '/destination/:id',
+      name: 'destination',
+      component: () => import('./views/Destination.vue')
+    },
+    {
+      path: '/fooddrinks/:id',
+      name: 'fooddrink',
+      component: () => import('./views/FoodDrink.vue')
+    },
+    {
+      path: '/places/:id',
       name: 'place',
       component: () => import('./views/Place.vue')
     },

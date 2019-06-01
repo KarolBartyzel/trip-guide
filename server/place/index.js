@@ -1,10 +1,11 @@
-const fileDb = require('./../file-db');
+const fileDb = require('../file-db');
+
 
 function getPlace(req, res) {
-    const places = fileDb.read('./place/places.json');
+    const place = fileDb.read('./place/place.json');
     const placeId = Number(req.params.placeId);
     setTimeout(() => {
-        res.json(places.find(place => place.id === placeId));
+        res.json(place.find(place => place.id === placeId));
     }, 1000);
 };
 

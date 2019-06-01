@@ -1,0 +1,51 @@
+[
+    { 
+        "id": 1,
+        "city_name": "Paris",
+        "country_name": "France",
+        "img": "https://thisgirlabroad.com/wp-content/uploads/2015/01/img-poi530-G6bo2q-i4s.jpg",
+        "tips": {
+            "wifi": "Easy to find WiFi, expensive mobile data",
+            "hotels": "Comfortable, but expensive hotels",
+            "flights": "Affordable flights"
+        },
+        "places": [
+            {
+                "id": 1,
+                "name": "Eiffel Tower",
+                "rating": 4.5,
+                "open_time": "9:30",
+                "close_time": "23:45",
+                "description": "Landmark 324m-high 19th-century tower",
+                "img": "https://thisgirlabroad.com/wp-content/uploads/2015/01/img-poi530-G6bo2q-i4s.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Cathédrale Notre-Dame de Paris",
+                "rating": 4.5,
+                "open_time": "6:30",
+                "close_time": "21:00",
+                "description": "Iconic Gothic church with literary link",
+                "img": "https://news.illinois.edu/files/6367/775613/150755.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Louvre Museum",
+                "rating": 4.5,
+                "open_time": "9:00",
+                "close_time": "18:00",
+                "description": "Landmark art museum with vast collection",
+                "img": "http://www.inspiringinterns.com/blog/wp-content/uploads/2017/09/louvre-530058_1280-1200x800.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Champs-Élysées",
+                "rating": 5,
+                "open_time": "00:00",
+                "close_time": "24:00",
+                "description": "Iconic site of landmarks, dining & shops",
+                "img": "https://i.pinimg.com/originals/07/c3/52/07c35254d80549d77189e2fd66f1314a.jpg"
+            }
+        ]
+    }
+]
