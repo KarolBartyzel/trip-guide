@@ -24,6 +24,11 @@ export default new Router({
       component: () => import('./views/FoodDrink.vue')
     },
     {
+      path: '/advancedsearch/:id',
+      name: 'advancedSearch',
+      component: () => import('./views/AdvancedSearch.vue')
+    },
+    {
       path: '/places/:id',
       name: 'place',
       component: () => import('./views/Place.vue')
