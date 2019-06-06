@@ -47,5 +47,89 @@
                 "img": "https://i.pinimg.com/originals/07/c3/52/07c35254d80549d77189e2fd66f1314a.jpg"
             }
         ]
+    },
+    {
+        "id": 2,
+        "city_name": "New York City",
+        "country_name": "USA",
+        "img": "https://lazurowyprzewodnik.pl/wp-content/uploads/2018/02/Nowy-Jork3.jpg",
+        "tips": {
+            "wifi": "Easy to find WiFi, expensive mobile data",
+            "hotels": "Comfortable, but expensive hotels",
+            "flights": "Affordable flights"
+        },
+        "places": []
+    },
+    {
+        "id": 3,
+        "city_name": "London",
+        "country_name": "England",
+        "img": "https://lazurowyprzewodnik.pl/wp-content/uploads/2018/02/Nowy-Jork3.jpg",
+        "tips": {
+            "wifi": "Easy to find WiFi, expensive mobile data",
+            "hotels": "Comfortable, but expensive hotels",
+            "flights": "Affordable flights"
+        },
+        "places": []
+    },
+    {
+        "id": 4,
+        "city_name": "Madrit",
+        "country_name": "Spain",
+        "img": "https://v.wpimg.pl/NzQ5NjI0YRswVzhZZktsDnMPbAMgEmJYJBd0SGZ_YUxlATZeegBhHn9CPgMkV2AKPRp5U34BfU9iB31HfQh8TmEBelJmQC8WMFZjByhUPAMlGyQaLFdsBw==",
+        "tips": {
+            "wifi": "Easy to find WiFi, expensive mobile data",
+            "hotels": "Comfortable, but expensive hotels",
+            "flights": "Affordable flights"
+        },
+        "places": []
+    },
+    {
+        "id": 5,
+        "city_name": "Malta",
+        "country_name": "Malta",
+        "img": "https://gfx.radiozet.pl/var/radiozet/storage/images/media/images/valletta/805525-1-pol-PL/Valletta.jpg",
+        "tips": {
+            "wifi": "Easy to find WiFi, expensive mobile data",
+            "hotels": "Comfortable, but expensive hotels",
+            "flights": "Affordable flights"
+        },
+        "places": []
+    },
+    {
+        "id": 6,
+        "city_name": "Nicea",
+        "country_name": "France",
+        "img": "https://i.content4travel.com/cms/img/u/desktop/prodsliderphoto//ncecitr_0.jpg?version=180120-08?version=180120-08",
+        "tips": {
+            "wifi": "Easy to find WiFi, expensive mobile data",
+            "hotels": "Comfortable, but expensive hotels",
+            "flights": "Affordable flights"
+        },
+        "places": []
+    },
+    {
+        "id": 7,
+        "city_name": "Rome",
+        "country_name": "Italy",
+        "img": "https://www.fodors.com/wp-content/uploads/2018/10/HERO_UltimateRome_Hero_shutterstock789412159.jpg",
+        "tips": {
+            "wifi": "Easy to find WiFi, expensive mobile data",
+            "hotels": "Comfortable, but expensive hotels",
+            "flights": "Affordable flights"
+        },
+        "places": []
+    },
+    {
+        "id": 8,
+        "city_name": "Cracow",
+        "country_name": "Poland",
+        "img": "https://f4fcdn.eu/wp-content/uploads/2018/06/krakowmain.jpg",
+        "tips": {
+            "wifi": "Easy to find WiFi, expensive mobile data",
+            "hotels": "Comfortable, but expensive hotels",
+            "flights": "Affordable flights"
+        },
+        "places": []
     }
 ]

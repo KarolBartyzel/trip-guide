@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
 
 Vue.use(Router)
 
@@ -11,7 +10,12 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      redirect: '/discover'
+    },
+    {
+      path: '/discover',
+      name: 'discover',
+      component: () => import('./views/Discover.vue')
     },
     {
       path: '/destination/:id',

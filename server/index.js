@@ -10,6 +10,7 @@ const place = require('./place');
 
 app
 /////ENDPOINTS/////
+    .get('/destinations/discover', destination.getRecommendedDestinations)
     .get('/destinations/:destinationId', destination.getDestination)
     .get('/fooddrinks/:fooddrinkId', fooddrink.getFooddrink)
     .get('/places/:placeId', place.getPlace)

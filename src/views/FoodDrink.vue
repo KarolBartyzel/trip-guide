@@ -52,7 +52,7 @@
       this.fetchData()
     },
     computed: {
-      pairedCategories: function () {
+        pairedCategories: function () {
         const pairedCategories = [];
         for (let i = 0; i < this.categories.length / 2; i++) {
           pairedCategories.push(this.categories.slice(2 * i, 2 * (i + 1)));
@@ -99,13 +99,6 @@
     .fooddrink {
         height: 100vh;
         color: white;
-    }
-
-    .loading {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .city-img {
