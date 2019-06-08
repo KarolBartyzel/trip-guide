@@ -19,7 +19,28 @@ function getRecommendedDestinations(req, res) {
     }, 1000);
 }
 
+function matchDestination(destination, filterQuery) {
+    let matched = false;
+    if  (destination['city_name']) {
+        matched = destination['city_name'].toLowerCase().includes(filterQuery);
+    }
+    if  (destination['country_name']) {
+        matched = matched || destination['country_name'].toLowerCase().includes(filterQuery);
+    }
+
+    return matched;
+}
+
+function getDestinations(req,res) {
+    const destinations = fileDb.read('./destination/destinations.json');
+    const filterQuery = req.query.q ? req.query.q.toLowerCase() : '';
+    setTimeout(() => {
+        res.json(destinations.filter((d) => matchDestination(d, filterQuery)).slice(0, 5));
+    }, 200);
+}
+
 module.exports = {
     getDestination,
-    getRecommendedDestinations
+    getRecommendedDestinations,
+    getDestinations
 };

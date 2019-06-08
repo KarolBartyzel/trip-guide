@@ -7,10 +7,19 @@
                         <a href="">Discover</a>
                     </div>
                     <div class="col-6">
-                        <a href="">Discover</a>
+                        <a href="">My destinations</a>
                     </div>
                 </div>
-                <input type="search" class="form-control" id="place-search" aria-describedby="place" placeholder="Type a place">
+                <div class="search_wrapper">
+                    <input v-model="searchValue" v-on:input="onSearchChange" type="search" class="form-control" id="place-search" name="place-search" aria-describedby="place" placeholder="Type a place">
+                    <ul v-if="showSearchList" class="search-list list-group">
+                        <li v-for="destination in searchedDest" :key="destination.id" class="list-group-item">
+                            <router-link v-bind:to="'destination/'+destination.id">
+                                {{destination.city_name}}
+                            </router-link>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="loading" v-if="!destinations && loading">
                 <circle4></circle4>
@@ -20,10 +29,12 @@
             </div>
             <div class="destinations">
                 <div v-for="(destination, index) in destinations" :key="destination.id">
-                    <div class="destination-tile">
-                        <h2 class="city-name">{{destination.city_name}}</h2>
-                        <img v-bind:src="destination.img" alt="">
-                    </div>
+                    <router-link v-bind:to="'destination/'+destination.id">
+                        <div class="destination-tile">
+                            <h2 class="city-name">{{destination.city_name}}</h2>
+                            <img v-bind:src="destination.img" alt="">
+                        </div>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -38,7 +49,10 @@
         data() {
             return {
                 destinations: null,
-                loading: false
+                loading: false,
+                searchValue: '',
+                searchedDest: [],
+                showSearchList: false
             }
         },
         created() {
@@ -52,6 +66,17 @@
                         this.destinations = await res.json();
                         this.loading = false;
                     });
+            },
+            onSearchChange () {
+                if (this.searchValue !== '') {
+                    fetch(`http://localhost:3009/destinations?q=${this.searchValue}`)
+                        .then(async (res) => {
+                            this.searchedDest = await res.json();
+                            this.showSearchList = this.searchedDest.length !== 0 ;
+                        });
+                } else {
+                    this.showSearchList = false;
+                }
             }
         },
         components: {
@@ -70,6 +95,7 @@
     padding: 20px 15px 10px 15px;
 
     .buttons {
+        background-color: #244F6F;
         a {
             color: white;
             font-size: 1.1em;
@@ -94,6 +120,7 @@
     -webkit-box-shadow: 0px 3px 9px 1px rgba(0,0,0,0.68);
     -moz-box-shadow: 0px 3px 9px 1px rgba(0,0,0,0.68);
     box-shadow: 0px 3px 9px 1px rgba(0,0,0,0.68);
+    cursor: pointer;
 
     img {
         height: 142px;
@@ -121,6 +148,38 @@
         background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 48%,rgba(0,0,0,0.48) 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 48%,rgba(0,0,0,0.48) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#7a000000',GradientType=0 ); /* IE6-9 */
+    }
+}
+
+.search_wrapper {
+    position: relative;
+
+    #place-search {
+
+    }
+
+    .search-list {
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        top: 45px;
+
+        .list-group-item:first-child {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .list-group-item {
+            padding: 0;
+        }
+
+        a {
+            color: #2c3e50;
+            display: block;
+            width:  100%;
+            padding: 12px 20px;
+            text-decoration: none;
+        }
     }
 }
 </style>

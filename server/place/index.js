@@ -7,7 +7,7 @@ function getPlace(req, res) {
     setTimeout(() => {
         res.json(place.find(place => place.id === placeId));
     }, 1000);
-};
+}
 
 module.exports = {
     getPlace,
