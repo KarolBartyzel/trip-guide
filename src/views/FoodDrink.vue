@@ -18,7 +18,7 @@
                         <span style="color: #000;float: left;font-size: 1.2em;">{{foodcat.category}}</span>
                         <span style="color: #2699FB;float: right;">More</span>
                     </div>
-                    <slider class="restaurants" animation="normal" :indicators="false" :interval="5000" :speed="1000">
+                    <slider class="restaurants" animation="normal" :autoplay="false" :indicators="false" :speed="1000">
                         <a :href="'../places/1'">
                             <slider-item class="city-place-slider-item" v-for="(place) in foodcat.restaurants" :key="place.id">
                                 <place :place="place"/>
@@ -164,7 +164,6 @@
 
     .slider-item.city-place-slider-item {
         padding: 0 20px;
-        width: calc(100% - 40px) !important;
     }
 
     .slider-btn {
