@@ -22,7 +22,7 @@
                         <span style="color: #000;float: left;font-size: 1.2em;">{{foodcat.category}}</span>
                         <span style="color: #2699FB;float: right;">More</span>
                     </div>
-                    <slider class="restaurants" animation="normal" :indicators="false" :interval="5000000" :speed="1000">
+                    <slider class="restaurants" animation="normal" :autoplay="false" :indicators="false" :speed="1000">
                         <a :href="'../places/1'">
                             <slider-item class="city-place-slider-item" v-for="(place) in foodcat.restaurants" :key="place.id">
                                 <place :place="place"/>
@@ -56,7 +56,7 @@
       this.fetchData()
     },
     computed: {
-      pairedCategories: function () {
+        pairedCategories: function () {
         const pairedCategories = [];
         for (let i = 0; i < this.categories.length / 2; i++) {
           pairedCategories.push(this.categories.slice(2 * i, 2 * (i + 1)));

@@ -9,8 +9,9 @@
         </div>
 
         <div class="advanced-search-padding">
-            <select class="form-control form-control-lg minimal">
+            <select class="category-select form-control form-control-lg">
                 <option>Food&Drinks</option>
+                <option>Hotels</option>
                 <option>Hotels</option>
                 <option>Monuments</option>
                 <option>Museums</option>
@@ -21,22 +22,22 @@
             <p>Prices</p>
 
             <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="defaultCheck0">
+                <input type="checkbox" checked class="custom-control-input" id="defaultCheck0" />
                 <label class="custom-control-label" for="defaultCheck0">free</label>
             </div>
 
             <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="defaultCheck1">
+                <input type="checkbox" class="custom-control-input" id="defaultCheck1"/>
                 <label class="custom-control-label" for="defaultCheck1">$</label>
             </div>
 
             <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="defaultCheck2">
+                <input type="checkbox" class="custom-control-input" id="defaultCheck2"/>
                 <label class="custom-control-label" for="defaultCheck2">$$</label>
             </div>
 
             <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="defaultCheck3">
+                <input type="checkbox" class="custom-control-input" id="defaultCheck3"/>
                 <label class="custom-control-label" for="defaultCheck3">$$$</label>
             </div>
 
@@ -47,7 +48,7 @@
             <p>Rating</p>
 
             <div class="custom-control custom-radio">
-                <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                <input type="radio" checked class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
                 <label class="custom-control-label" for="defaultUnchecked">
                     <svg class="icon">
                         <use xlink:href="#stars-1-0-star"/>
@@ -245,38 +246,13 @@
         width: 100%;
     }
 
-    select.minimal {
-        background-image:
-                linear-gradient(45deg, transparent 50%, gray 50%),
-                linear-gradient(135deg, gray 50%, transparent 50%),
-                linear-gradient(to right, #ccc, #ccc);
-        background-position:
-                calc(100% - 20px) calc(1em + 2px),
-                calc(100% - 15px) calc(1em + 2px),
-                calc(100% - 2.5em) 0.5em;
-        background-size:
-                5px 5px,
-                5px 5px,
-                1px 1.5em;
-        background-repeat: no-repeat;
+    .category-select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 96% !important;
+
     }
 
-    select.minimal:focus {
-        background-image:
-                linear-gradient(45deg, green 50%, transparent 50%),
-                linear-gradient(135deg, transparent 50%, green 50%),
-                linear-gradient(to right, #ccc, #ccc);
-        background-position:
-                calc(100% - 15px) 1em,
-                calc(100% - 20px) 1em,
-                calc(100% - 2.5em) 0.5em;
-        background-size:
-                5px 5px,
-                5px 5px,
-                1px 1.5em;
-        background-repeat: no-repeat;
-        border-color: green;
-        outline: 0;
-    }
-
+    .category-select::-ms-expand { display: none; }
 </style>

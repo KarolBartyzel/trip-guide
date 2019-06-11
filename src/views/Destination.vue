@@ -39,9 +39,12 @@
         <font-awesome-icon class="back-button" icon="chevron-left" ontouchstart="" @click="$router.go(-1)" />
         <div class="row" v-for="(pairedCategory, index) in pairedCategories" :key="index">
             <div class="column" v-for="(category, categoryIndex) in pairedCategory" :key="categoryIndex">
-                <a :href="'../'+category.href + '/' + destinationId">
+                <a v-if="category.href" :href="'../'+category.href + '/' + destinationId">
                     <category :title="category.title" :img="category.img" />
                 </a>
+                <span v-else>
+                    <category :title="category.title" :img="category.img" />
+                </span>
             </div>
 
         </div>
@@ -176,7 +179,6 @@ a {
 }
 .slider-item.city-place-slider-item {
     padding: 0 20px;
-    width: calc(100% - 40px) !important;
 }
 .slider-btn {
     width: 22px !important;
@@ -210,8 +212,10 @@ a {
 .row {
     display: flex;
     background-color: #C4D8E9;
+    padding: 5px;
+    justify-content: center;
 }
 .column {
-    flex: 50%;
+    width: 47%;
 }
 </style>
