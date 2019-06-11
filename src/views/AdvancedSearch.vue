@@ -9,9 +9,9 @@
         </div>
 
         <div class="advanced-search-padding">
-            <select class="form-control form-control-lg">
-                <option>Hotels</option>
+            <select class="form-control form-control-lg minimal">
                 <option>Food&Drinks</option>
+                <option>Hotels</option>
                 <option>Monuments</option>
                 <option>Museums</option>
             </select>
@@ -243,6 +243,40 @@
 
     .search-button {
         width: 100%;
+    }
+
+    select.minimal {
+        background-image:
+                linear-gradient(45deg, transparent 50%, gray 50%),
+                linear-gradient(135deg, gray 50%, transparent 50%),
+                linear-gradient(to right, #ccc, #ccc);
+        background-position:
+                calc(100% - 20px) calc(1em + 2px),
+                calc(100% - 15px) calc(1em + 2px),
+                calc(100% - 2.5em) 0.5em;
+        background-size:
+                5px 5px,
+                5px 5px,
+                1px 1.5em;
+        background-repeat: no-repeat;
+    }
+
+    select.minimal:focus {
+        background-image:
+                linear-gradient(45deg, green 50%, transparent 50%),
+                linear-gradient(135deg, transparent 50%, green 50%),
+                linear-gradient(to right, #ccc, #ccc);
+        background-position:
+                calc(100% - 15px) 1em,
+                calc(100% - 20px) 1em,
+                calc(100% - 2.5em) 0.5em;
+        background-size:
+                5px 5px,
+                5px 5px,
+                1px 1.5em;
+        background-repeat: no-repeat;
+        border-color: green;
+        outline: 0;
     }
 
 </style>

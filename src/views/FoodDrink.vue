@@ -9,7 +9,11 @@
         <div class="fooddrink-content" v-else>
 
             <div class="header">
-                <div class="header-title">Food & Drink</div>
+                <div class="header-title">Food & Drink
+                    <a href="../advancedsearch/1">
+                        <font-awesome-icon style="float: right; margin-top: 3px;" icon="search"/>
+                    </a>
+                </div>
             </div>
 
             <div v-for="(foodcat) in fooddrink.categories" :key="foodcat.id">
@@ -18,7 +22,7 @@
                         <span style="color: #000;float: left;font-size: 1.2em;">{{foodcat.category}}</span>
                         <span style="color: #2699FB;float: right;">More</span>
                     </div>
-                    <slider class="restaurants" animation="normal" :indicators="false" :interval="5000" :speed="1000">
+                    <slider class="restaurants" animation="normal" :indicators="false" :interval="5000000" :speed="1000">
                         <a :href="'../places/1'">
                             <slider-item class="city-place-slider-item" v-for="(place) in foodcat.restaurants" :key="place.id">
                                 <place :place="place"/>
@@ -52,7 +56,7 @@
       this.fetchData()
     },
     computed: {
-        pairedCategories: function () {
+      pairedCategories: function () {
         const pairedCategories = [];
         for (let i = 0; i < this.categories.length / 2; i++) {
           pairedCategories.push(this.categories.slice(2 * i, 2 * (i + 1)));
@@ -164,7 +168,6 @@
 
     .slider-item.city-place-slider-item {
         padding: 0 20px;
-        width: calc(100% - 40px) !important;
     }
 
     .slider-btn {
@@ -210,5 +213,10 @@
 
     .column {
         flex: 50%;
+    }
+
+    a {
+        color: white;
+        text-decoration: none; /* no underline */
     }
 </style>

@@ -20,11 +20,13 @@
                         <font-awesome-icon class="rating-star" icon="star" v-if="place.rating - index >= 1"/>
                         <font-awesome-icon class="rating-star" icon="star-half-alt" v-else/>
                     </div>
+                    <span style="color: #a0a0a0; margin-left: 10px;">541 reviews (Google Maps)</span>
                 </div>
                 <div class="place-description">{{ place.description }}</div>
             </div>
-            <img style="max-width: 95%" src="../assets/navigate_bar.png">
-            <img style="max-width: 100%" src="../assets/map.png">
+            <img style="max-width: 95%; padding: 0px 10px 10px 10px;" src="../assets/navigate_bar.png">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.4449219431394!2d2.2980170157447852!3d48.868794279288494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe8213334a9%3A0x905fb3540fe15d68!2sLe+Cinq!5e0!3m2!1spl!2spl!4v1560235960863!5m2!1spl!2spl"
+                    width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="place-tips">
                 <div class="city-tip">
                     <font-awesome-icon class="city-tip-icon" icon="map-marker-alt"/>
@@ -134,7 +136,7 @@
     }
 
     .place-title {
-        height: 30px;
+        height: 50px;
         background-color: #fff;
         padding: 10px 25px;
         display: list-item;
